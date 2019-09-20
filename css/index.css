@@ -270,7 +270,7 @@ img {
   transform: scale(0.95);
 }
 footer {
-  width: 100%;
+  width: 50rem;
   height: 5rem;
   margin-top: 39rem;
   text-align: center;
