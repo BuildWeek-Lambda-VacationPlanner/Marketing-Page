@@ -27,15 +27,27 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, @light-sunset, @sunset);
+                background-image: radial-gradient(ellipse at center, #268026 20%, #be257c);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, @light-sunset, @sunset);
+                background-image: radial-gradient(ellipse at center, #008B8B 20%, #103A9B);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, @light-sunset, @sunset);
+                background-image: radial-gradient(ellipse at center, #663399 25%, #3A2EFF);
+            }
+
+            &-4 {
+                background-image: radial-gradient(#9240FB, #FB2FF2);
+            }
+
+            &-5 {
+                background-image: radial-gradient(#9240FB, #FFED30);
+            }
+
+            &-6 {
+                background-image: radial-gradient(#1E90FF, #3A2EFF);
             }
         }
     }
@@ -59,15 +71,27 @@
         border-top-right-radius: .3rem;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, @light-sunset, @sunset), url(../img/nat-5.jpg);
+            background: #268026;
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, @light-sunset, @sunset), url(../img/nat-6.jpg);
+            background: #008B8B;
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom,  @light-sunset, @sunset), url(../img/nat-7.jpg);
+            background: #663399;
+        }
+
+        &--4 {
+            background: #9240FB;
+        }
+
+        &--5 {
+            background: #228B22;
+        }
+
+        &--6 {
+            background: #1E90FF;
         }
     }
 
@@ -89,24 +113,27 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(
-                to right bottom, 
-                rgba(@light-sunset, .85), 
-                rgba(@sunset, .85));            
+            background: #268026;            
         }
 
         &--2 {
-            background-image: linear-gradient(
-                to right bottom, 
-                rgba(@light-sunset, .85), 
-                rgba(@sunset, .85));
+            background: #008B8B;
         }
 
         &--3 {
-            background-image: linear-gradient(
-                to right bottom, 
-                rgba(@light-sunset, .85), 
-                rgba(sunset, .85));
+            background: #663399;
+        }
+
+        &--4 {
+            background: #9240FB;
+        }
+
+        &--5 {
+            background: #228B22;
+        }
+
+        &--6 {
+            background: #268026;
         }
     }
 
