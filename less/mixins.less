@@ -1,5 +1,20 @@
-.displayFlex(@justify, @align) {
+.display(@justify, @align) {
     display: flex;
     justify-content: @justify;
     align-content: @align;
+}
+
+.displayFlex(@flex-direction, @justify-content) {
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @flex-direction;
+}
+
+.button() {
+    transition: background-color 1s ease-out;
+    text-align: center;
+    &:hover { 
+    background: rgb(241, 121, 7);
+    
+ }
 }
