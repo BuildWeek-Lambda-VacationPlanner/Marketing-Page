@@ -386,106 +386,50 @@ header nav a:hover {
     border-radius: 50%;
   }
 }
-.container {
-  width: 48rem;
-  margin: 1rem auto;
-}
-@media (min-width: 800px {
-  .container {
-    width: 100rem;
-    margin: 1rem auto;
-  }
-}
 .container .developers {
   text-align: center;
   margin: 1rem auto;
   width: 100%;
 }
-@media (min-width: 800px {
-  .container .developers {
-    text-align: center;
-    margin: 1rem auto;
-    width: 100%;
-  }
+.container .developers .heading-secondary {
+  margin-top: 1rem;
 }
 .container .developers .ui {
   text-align: left;
   margin: 1rem 0;
-}
-@media (min-width: 800px {
-  .container .developers .ui {
-    text-align: left;
-    margin: 1rem auto;
-  }
 }
 .container .developers .ui .ui-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-@media (min-width: 800px {
-  .container .developers .ui .ui-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-  }
-}
 .container .developers .ui .cards-1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .container .footabout {
   margin-top: 1rem;
 }
-@media (min-width: 800px {
-  .container .footabout {
-    margin-top: 1rem;
-  }
-}
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 52rem;
-  margin: 10px 0;
-  width: 95%;
-}
-@media (min-width: 800px {
-  .card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    height: 48rem;
-    margin: 1rem 2rem;
-    width: 40rem;
-  }
+  height: 30rem;
+  margin: 1rem 2rem;
+  width: 25rem;
 }
 .card__side {
-  height: 52rem;
+  height: 30rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 25rem;
   backface-visibility: hidden;
   border-radius: 100rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}
-@media (min-width: 800px {
-  .card__side {
-    height: 48rem;
-    transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40rem;
-    backface-visibility: hidden;
-    border-radius: 100rem;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  }
 }
 .card__side--front {
   background-color: white;
@@ -545,18 +489,18 @@ header nav a:hover {
   background: transparent;
 }
 .card__heading {
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: white;
   position: absolute;
-  top: 8rem;
+  top: 5rem;
   width: 100%;
 }
 .card__heading-span {
-  padding: 2rem 3rem;
+  padding: 0.5rem 1rem;
   border-radius: 5rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -579,31 +523,27 @@ header nav a:hover {
 .card__heading-span--6 {
   background: #1E90FF;
 }
-.card__details {
-  padding: 4.5rem;
-}
 .card__details img {
   clip-path: circle(50% at 50% 50%);
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .card__full {
-  margin: 8rem auto;
-  width: 90%;
+  width: 100%;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
 .card p {
   color: white;
-  font-size: 1.8rem;
-  padding: 2rem;
+  font-size: 1.2rem;
+  margin: 6rem 2rem;
 }
-.card .card_nav {
+.card .card__nav {
   width: 100%;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
 .card a {
-  margin: 0 50px;
+  margin: 0 auto;
   text-decoration: none;
   color: white;
   font-size: 1.8rem;

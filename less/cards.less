@@ -1,110 +1,81 @@
 // FUNCTIONALITY
 .card {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
     perspective: 150rem;
     -moz-perspective: 150rem;
     // position: relative;
-    height: 52rem;
-    margin: 10px 0;
-    width: 95%;
+    height: 30rem;
+    margin: 1rem 2rem;
+    width: 25rem;
 
-    @media @desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        perspective: 150rem;
-        -moz-perspective: 150rem;
-        // position: relative;
-        height: 48rem;
-        margin: 1rem 2rem;
-        width: 40rem;
-    }
+    // @media @desktop {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: center;
+    //     perspective: 150rem;
+    //     -moz-perspective: 150rem;
+    //     // position: relative;
+    //     height: 48rem;
+    //     margin: 1rem 2rem;
+    //     width: 40rem;
+    // }
 
     &__side {
-        height: 52rem;
+        height: 30rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 25rem;
         backface-visibility: hidden;
         border-radius: 100rem;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba(black, .15);
 
-        @media @desktop {
-            height: 48rem;
-            transition: all .8s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 40rem;
-            backface-visibility: hidden;
-            border-radius: 100rem;
-            overflow: hidden;
-            box-shadow: 0 1.5rem 4rem rgba(black, .15); 
-        }
+        // @media @desktop {
+        //     height: 48rem;
+        //     transition: all .8s ease;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 40rem;
+        //     backface-visibility: hidden;
+        //     border-radius: 100rem;
+        //     overflow: hidden;
+        //     box-shadow: 0 1.5rem 4rem rgba(black, .15); 
+        // }
 
         &--front {
             background-color: white;
-
-            @media @desktop {
-        
-            }
         }
 
         &--back {
             transform: rotateY(180deg);
 
-            @media @desktop {
-        
-            }
-
             &-1 {
                 background-image: radial-gradient(ellipse at center, #268026 20%, #205564);
-
-                @media @desktop {
-        
-                }
             }
 
             &-2 {
                 background-image: radial-gradient(ellipse at center, #008B8B 20%, #103A9B);
-
-                @media @desktop {
-        
-                }
             }
 
             &-3 {
                 background-image: radial-gradient(ellipse at center, #663399 25%, #3A2EFF);
-
-                @media @desktop {
-        
-                }
             }
 
             &-4 {
                 background-image: radial-gradient(#9240FB, #FB2FF2);
-
-                @media @desktop {
-        
-                }
             }
 
             &-5 {
                 background-image: radial-gradient(#228B22, #1D5B6C);
-
-                @media @desktop {
-        
-                }
             }
 
             &-6 {
                 background-image: radial-gradient(#1E90FF, #241CBB);
-
-                @media @desktop {
-        
-                }
             }
 
         }
@@ -112,19 +83,11 @@
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
-
-        @media @desktop {
-        
-        }
     }
 
 
     &:hover &__side--back {
         transform: rotateY(0);
-
-        @media @desktop {
-        
-        }
     }
 
 
@@ -138,194 +101,109 @@
         border-top-left-radius: 100rem;
         border-top-right-radius: 100rem;
 
-        @media @desktop {
-        
-        }
-
         &--1 {
             background: transparent;
-
-            @media @desktop {
-        
-            }
         }
 
         &--2 {
             background: transparent;
-
-            @media @desktop {
-        
-            }
         }
 
         &--3 {
             background: transparent;
-
-            @media @desktop {
-        
-            }
         }
 
         &--4 {
             background: transparent;
-
-            @media @desktop {
-        
-            }
         }
 
         &--5 {
             background: transparent;
-
-            @media @desktop {
-        
-            }
         }
 
         &--6 {
             background: transparent;
-
-            @media @desktop {
-        
-            }
         }
     }
 
     &__heading {
-        font-size: 2.8rem;
+        font-size: 1.6rem;
         font-weight: 300;
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         text-align: center;
         color: white;
         position: absolute;
-        top: 8rem;
+        top: 5rem;
         width: 100%;
-
-        @media @desktop {
-        
-        }
     }
 
     &__heading-span {
-        padding: 2rem 3rem;
+        padding: .5rem 1rem;
         border-radius: 5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
-        @media @desktop {
-        
-        }
-
         &--1 {
             background: #268026;
-            
-            @media @desktop {
-        
-            }
         }
 
         &--2 {
             background: #008B8B;
-
-            @media @desktop {
-        
-            }
         }
 
         &--3 {
             background: #663399;
-
-            @media @desktop {
-        
-            }
         }
 
         &--4 {
             background: #9240FB;
-
-            @media @desktop {
-        
-            }
         }
         
         &--5 {
             background: #228B22;
-
-            @media @desktop {
-        
-            }
         }
 
 
         &--6 {
             background: #1E90FF;
-
-            @media @desktop {
-        
-            }
         }
 
 
     }
 
     &__details {
-        padding: 4.5rem;
-
-        @media @desktop {
-        
-        }
+        // padding: 4.5rem;
 
         img {
             clip-path: circle(50% at 50% 50%);
-            margin-top: 5rem;
-
-            @media @desktop {
-        
-            }
+            margin-top: 2rem;
         }
     }
 
     // BACK SIDE STYLING
     &__full {
-        margin: 8rem auto;
-        width: 90%;
+        width: 100%;
         text-align: center;
         font-family: 'Raleway', sans-serif; 
-
-        @media @desktop {
-        
-        }
     }
 
     p {
         color: white;
-        font-size: 1.8rem;
-        padding: 2rem;
-
-        @media @desktop {
-        
-        }
+        font-size: 1.2rem;
+        margin: 6rem 2rem;
     }
 
-    .card_nav {
+    .card__nav {
         width: 100%;
         text-align: center;
-        font-family: 'Raleway', sans-serif; 
-
-        @media @desktop {
-        
-        }
+        font-family: 'Raleway', sans-serif;
     }
 
-    a {     
-        margin: 0 50px;  
+    a {   
+        margin: 0 auto;  
         text-decoration: none;
         color: white;
         font-size: 1.8rem;
-
-        @media @desktop {
-        
-        }
     }
 }
